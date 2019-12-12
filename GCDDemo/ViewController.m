@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Semaphore.h"
-#import "Group.h"
-#import "Barrier.h"
-#import "Apply.h"
+
 
 
 @interface ViewController ()
@@ -23,11 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [Semaphore syncTest];
-//    [Semaphore limitTest];
-//    [Group enterAndleaveTest];
-//    [Barrier barrierTest];
-//    dispatch_queue_t queue = dispatch_get_main_queue();
 
 }
 
