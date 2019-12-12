@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    TableViewController *tableViewController = [[TableViewController alloc] init];
+      tableViewController.exampleControllerNames = @[@"AfterVC",@"GroupVC",@"SemaphoreVC",@"BarrierVC",@"ApplyVC"];
+      UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+      navigationController.navigationBar.translucent = NO;
+      self.window.rootViewController = navigationController;
+      [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
