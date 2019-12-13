@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  GCDDemo
 //
-//  Created by leichunxiang on 2019/4/14.
+//  Created by lcx on 2019/4/14.
 //  Copyright © 2019 lcx. All rights reserved.
 //
 
@@ -20,7 +20,16 @@
     // Override point for customization after application launch.
     
     TableViewController *tableViewController = [[TableViewController alloc] init];
-      tableViewController.exampleControllerNames = @[@"AfterVC",@"GroupVC",@"SemaphoreVC",@"BarrierVC",@"ApplyVC"];
+    
+    //分区标题
+    tableViewController.sectionHeadTitles = @[@"dispatch_(a)sync /Queue/CurrentThread",@"Thread Synchronization",@"Lock"];
+    
+    //分区内容
+    NSArray *dispatchArr = @[@"Dispatch_syncVC",@"Dispatch_asyncVC"];
+    NSArray *threadSynchronizationArr = @[@"AfterVC",@"GroupVC",@"SemaphoreVC",@"BarrierVC",@"ApplyVC"];
+    NSArray *lockArr = @[@"DeadlockVC"];
+    tableViewController.exampleControllerNames = @[dispatchArr,threadSynchronizationArr,lockArr];
+    
       UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
       navigationController.navigationBar.translucent = NO;
       self.window.rootViewController = navigationController;

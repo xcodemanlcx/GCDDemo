@@ -1,33 +1,19 @@
 //
-//  BaseViewController.m
-//  LCXUIInit
+//  SyncLockVC.m
+//  GCDDemo
 //
-//  Created by lcx on 2019/9/2.
+//  Created by lcx on 2019/12/13.
 //  Copyright © 2019 lcx. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "SyncLockVC.h"
 
-@interface BaseViewController ()
+@interface SyncLockVC ()
 
 @end
 
-@implementation BaseViewController
+@implementation SyncLockVC
 
-- (void)dealloc
-{
-    NSLog(@"dealloc %@",[self class]);
-}
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.view.backgroundColor = [UIColor whiteColor];
-        self.title =NSStringFromClass([self class]);
-    }
-    return self;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

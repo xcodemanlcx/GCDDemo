@@ -28,7 +28,7 @@
         NSLog(@"1");
     });
     
-    //异步延迟2提交
+    //延迟2秒后，异步调度
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
         NSLog(@"2");
     });

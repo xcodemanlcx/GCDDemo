@@ -2,7 +2,7 @@
 //  BaseViewController.h
 //  LCXUIInit
 //
-//  Created by leichunxiang on 2019/9/2.
+//  Created by lcx on 2019/9/2.
 //  Copyright © 2019 lcx. All rights reserved.
 //
 

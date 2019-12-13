@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0740E51C23A31E21006780BC /* DeadlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740E51B23A31E21006780BC /* DeadlockVC.m */; };
+		0740E52B23A335B2006780BC /* SyncLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740E52A23A335B2006780BC /* SyncLockVC.m */; };
+		0740E53A23A35F7D006780BC /* Dispatch_syncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740E53923A35F7D006780BC /* Dispatch_syncVC.m */; };
+		0740E53D23A35F9E006780BC /* Dispatch_asyncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740E53C23A35F9E006780BC /* Dispatch_asyncVC.m */; };
 		0784D9EF23A24E2D002E87EC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784D9EC23A24E2C002E87EC /* TableViewController.m */; };
 		0784D9F023A24E2D002E87EC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784D9EE23A24E2D002E87EC /* BaseViewController.m */; };
 		0784D9F423A24EA2002E87EC /* GroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784D9F323A24EA2002E87EC /* GroupVC.m */; };
@@ -23,6 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0740E51A23A31E21006780BC /* DeadlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeadlockVC.h; sourceTree = "<group>"; };
+		0740E51B23A31E21006780BC /* DeadlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeadlockVC.m; sourceTree = "<group>"; };
+		0740E52923A335B2006780BC /* SyncLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncLockVC.h; sourceTree = "<group>"; };
+		0740E52A23A335B2006780BC /* SyncLockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncLockVC.m; sourceTree = "<group>"; };
+		0740E53823A35F7D006780BC /* Dispatch_syncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dispatch_syncVC.h; sourceTree = "<group>"; };
+		0740E53923A35F7D006780BC /* Dispatch_syncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dispatch_syncVC.m; sourceTree = "<group>"; };
+		0740E53B23A35F9E006780BC /* Dispatch_asyncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dispatch_asyncVC.h; sourceTree = "<group>"; };
+		0740E53C23A35F9E006780BC /* Dispatch_asyncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dispatch_asyncVC.m; sourceTree = "<group>"; };
 		0784D9EB23A24E2C002E87EC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		0784D9EC23A24E2C002E87EC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		0784D9ED23A24E2C002E87EC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -60,7 +72,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0784D9F123A24E6D002E87EC /* ExamplesVC */ = {
+		0740E51D23A31F81006780BC /* ThreadSynchronization  */ = {
 			isa = PBXGroup;
 			children = (
 				0784D9FE23A25FF3002E87EC /* AfterVC.h */,
@@ -73,6 +85,38 @@
 				0784D9F923A259AA002E87EC /* BarrierVC.m */,
 				0784D9FB23A25DBA002E87EC /* ApplyVC.h */,
 				0784D9FC23A25DBB002E87EC /* ApplyVC.m */,
+			);
+			path = "ThreadSynchronization ";
+			sourceTree = "<group>";
+		};
+		0740E51F23A32057006780BC /* ThreadLock */ = {
+			isa = PBXGroup;
+			children = (
+				0740E51A23A31E21006780BC /* DeadlockVC.h */,
+				0740E51B23A31E21006780BC /* DeadlockVC.m */,
+				0740E52923A335B2006780BC /* SyncLockVC.h */,
+				0740E52A23A335B2006780BC /* SyncLockVC.m */,
+			);
+			path = ThreadLock;
+			sourceTree = "<group>";
+		};
+		0740E53E23A360C4006780BC /* Dispatch_(a)sync */ = {
+			isa = PBXGroup;
+			children = (
+				0740E53823A35F7D006780BC /* Dispatch_syncVC.h */,
+				0740E53923A35F7D006780BC /* Dispatch_syncVC.m */,
+				0740E53B23A35F9E006780BC /* Dispatch_asyncVC.h */,
+				0740E53C23A35F9E006780BC /* Dispatch_asyncVC.m */,
+			);
+			path = "Dispatch_(a)sync";
+			sourceTree = "<group>";
+		};
+		0784D9F123A24E6D002E87EC /* ExamplesVC */ = {
+			isa = PBXGroup;
+			children = (
+				0740E53E23A360C4006780BC /* Dispatch_(a)sync */,
+				0740E51F23A32057006780BC /* ThreadLock */,
+				0740E51D23A31F81006780BC /* ThreadSynchronization  */,
 			);
 			path = ExamplesVC;
 			sourceTree = "<group>";
@@ -184,9 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0740E51C23A31E21006780BC /* DeadlockVC.m in Sources */,
 				3648581C22636A6700ABA9BF /* ViewController.m in Sources */,
 				0784DA0023A25FF3002E87EC /* AfterVC.m in Sources */,
+				0740E53A23A35F7D006780BC /* Dispatch_syncVC.m in Sources */,
 				0784D9FD23A25DBB002E87EC /* ApplyVC.m in Sources */,
+				0740E52B23A335B2006780BC /* SyncLockVC.m in Sources */,
 				0784D9F023A24E2D002E87EC /* BaseViewController.m in Sources */,
 				0784D9F723A252FE002E87EC /* SemaphoreVC.m in Sources */,
 				0784D9F423A24EA2002E87EC /* GroupVC.m in Sources */,
@@ -194,6 +241,7 @@
 				3648581922636A6700ABA9BF /* AppDelegate.m in Sources */,
 				0784D9FA23A259AA002E87EC /* BarrierVC.m in Sources */,
 				0784D9EF23A24E2D002E87EC /* TableViewController.m in Sources */,
+				0740E53D23A35F9E006780BC /* Dispatch_asyncVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
