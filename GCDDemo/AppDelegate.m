@@ -25,7 +25,7 @@
     tableViewController.sectionHeadTitles = @[@"dispatch_(a)sync /Queue/CurrentThread",@"Thread Synchronization",@"Lock"];
     
     //分区内容
-    NSArray *dispatchArr = @[@"Dispatch_syncVC",@"Dispatch_asyncVC"];
+    NSArray *dispatchArr = @[@"Dispatch_syncVC",@"Dispatch_asyncVC",@"MixVC"];
     NSArray *threadSynchronizationArr = @[@"AfterVC",@"GroupVC",@"SemaphoreVC",@"BarrierVC",@"ApplyVC"];
     NSArray *lockArr = @[@"DeadlockVC"];
     tableViewController.exampleControllerNames = @[dispatchArr,threadSynchronizationArr,lockArr];

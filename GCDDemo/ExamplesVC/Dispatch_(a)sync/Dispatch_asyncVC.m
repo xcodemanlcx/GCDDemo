@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
 }
 
-#pragma mark - dispatch_async：异步调度：1、开辟子线程，并发无序执行异步任务；2、不阻塞当前线程；
+#pragma mark - dispatch_async：异步调度：1、可能会开辟子线程，并发无序执行异步任务；2、不阻塞当前线程；
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     int queueType = 1;
