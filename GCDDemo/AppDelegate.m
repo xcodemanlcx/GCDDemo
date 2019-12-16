@@ -27,7 +27,7 @@
     //分区内容
     NSArray *dispatchArr = @[@"Dispatch_syncVC",@"Dispatch_asyncVC",@"MixVC"];
     NSArray *threadSynchronizationArr = @[@"AfterVC",@"GroupVC",@"SemaphoreVC",@"BarrierVC",@"ApplyVC"];
-    NSArray *lockArr = @[@"DeadlockVC"];
+    NSArray *lockArr = @[@"DeadlockVC",@"SyncLockVC"];
     tableViewController.exampleControllerNames = @[dispatchArr,threadSynchronizationArr,lockArr];
     
       UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
