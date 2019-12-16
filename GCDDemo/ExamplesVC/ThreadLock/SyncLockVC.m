@@ -28,6 +28,7 @@
     [self initTicketStatusSave];
 }
 
+#pragma mark - 多窗口售火车票，使用锁使线程同步
 /**
  * 线程安全：使用 semaphore 加锁
  * 初始化火车票数量、卖票窗口(线程安全)、并开始卖票

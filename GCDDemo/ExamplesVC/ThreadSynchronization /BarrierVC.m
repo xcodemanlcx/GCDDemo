@@ -38,16 +38,16 @@
     dispatch_queue_t myQueue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(myQueue, ^{
         NSLog(@"1");
-        sleep(2);
+        sleep(1);
     });
     dispatch_barrier_async(myQueue, ^{
         NSLog(@"2");
-        sleep(2);
+        sleep(1);
     });
     
     dispatch_async(myQueue, ^{
         NSLog(@"3");
-        sleep(2);
+        sleep(1);
     });
     NSLog(@"4");
 }
