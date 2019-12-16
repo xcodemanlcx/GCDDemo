@@ -106,7 +106,7 @@
 - (void)saleTicketSafe_lock{
     while (1) {
         // 相当于加锁
-         [_lock lock];
+        [_lock lock];
         if (_ticketSurplusCount > 0) {  //如果还有票，继续售卖
             _ticketSurplusCount--;
             NSLog(@"%@", [NSString stringWithFormat:@"剩余票数：%ld 窗口：%@", (long)_ticketSurplusCount, [NSThread currentThread]]);
